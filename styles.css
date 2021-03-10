@@ -1,0 +1,38 @@
+body {
+  font-family: 'Vollkorn', serif;
+  background-color:powderblue;
+  color:rgb(47, 55, 62);
+}
+
+.container {
+  width: 80%;
+  align-items: center;
+  margin: auto;
+  text-align: center;
+
+}
+
+.row {
+  padding-bottom: 20px;
+}
+
+.col {
+  width: 33%;
+  height: 100vh;
+  display: inline-table;
+  background-color: white;
+  border-radius: 20px;
+  text-align: left;
+  position: static;
+ 
+  
+ 
+}
+
+h2 {
+  text-transform: uppercase;
+  font-size: 1.1vw;
+  text-align: center;
+  
+  
+}
