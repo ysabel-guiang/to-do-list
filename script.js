@@ -59,6 +59,7 @@ document.addEventListener('click', function () {
   for (let i = 0; i < checkbox.length;  i++){
 
     if (checkbox[i].checked){
+      alert("Congratulations for getting something done! You're doing a great job!")
       checkbox[i].remove();
       label[i].remove();
       brk[i].remove();
