@@ -27,15 +27,42 @@ function addToList() {
 }
 
 
+
 function addCheckbox (list){
 
-  let newInput = document.createElement("input");
-  newInput.type = "checkbox";
+let newInput = document.createElement("input");
+newInput.type = "checkbox";
+newInput.classList = "checkbox";
 
-  let newLabel = document.createElement("label");
-  newLabel.innerText = textBox.value;
 
-  list.appendChild(newInput);
-  list.appendChild(newLabel);
+let newLabel = document.createElement("label");
+newLabel.innerText = textBox.value;
+newLabel.classList = "label";
+
+let newBreak = document.createElement("BR");
+
+list.appendChild(newInput);
+list.appendChild(newLabel);
+list.appendChild(newBreak);
+
+
 
 }
+
+let checkbox = document.getElementsByClassName("checkbox");
+let label = document.getElementsByClassName("label");
+let brk = document.getElementsByTagName("br")
+
+
+document.addEventListener('click', function () {
+
+  for (let i = 0; i < checkbox.length;  i++){
+
+    if (checkbox[i].checked){
+      checkbox[i].remove();
+      label[i].remove();
+      brk[i].remove();
+  }
+}
+})
+

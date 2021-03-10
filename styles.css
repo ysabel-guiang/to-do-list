@@ -19,10 +19,12 @@ body {
 .col {
   width: 33%;
   height: 100vh;
-  display: inline-block;
+  display: inline-table;
   background-color: white;
   border-radius: 20px;
   text-align: left;
+  position: static;
+ 
   
  
 }
